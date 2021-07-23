@@ -1,0 +1,104 @@
+#:import layout layout
+<PageLayoutExemple@PageLayout>:
+    MainWidget:
+    BoxLayoutExemple:
+    AnchorLayoutExemple:
+    GridLayoutExemple:
+
+
+
+
+<ScrollViewExemple@ScrollView>
+    StackLayoutExemple:
+        size_hint: 1, None
+        height: self.minimum_height
+
+<StackLayoutExemple>:
+    # "left-right, top-bottom"
+    #orientation:"lr-tb"
+    #padding:("20bp", "20dp", "20dp", "20dp")
+    #spacing: "20dp"
+
+
+
+<GridLayoutExemple@GridLayout>:
+    # rows
+    # cols
+    cols: 3
+    Button:
+        text:"A"
+        size_hint:None, 1
+        width:"60dp"
+    BoxLayoutExemple:
+
+    Button:
+        text:"C"
+    Button:
+        text:"D"
+        size_hint:None, 1
+        width:"60dp"
+    Button:
+        text:"E"
+    Button:
+        text:"F"
+
+
+
+
+
+<AnchorLayoutExemple>:
+    # right, left, center
+    # top ,bottom, center
+    anchor_x:"center"
+    anchor_y:"top"
+    BoxLayout:
+        size_hint:.2,.2
+        Button:
+            text: "A"
+
+        Button:
+            text: "B"
+
+
+
+<BoxLayoutExemple>:
+    orientation: "horizontal"
+    #spacing:"10dp"
+    Button:
+        text: "A"
+        size_hint:.5, .5
+        #width : "100dp"
+        #height: "100dp"
+        # x, right, center_x
+        # y, top, center_y
+        pos_hint: {"center_y": .5}
+
+    BoxLayout:
+        orientation:"vertical"
+        spacing: "10dp"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+
+    Label:
+        text: "C"
+
+
+
+<MainWidget>:
+    Button:
+        text:"Hello"
+        size: "100dp", "60dp"
+        pos: "500dp", "100dp"
+        color:0,0,1,1
+
+    Label:
+        text:"hello2"
+        size: "100dp", "60dp"
+        pos: "100dp", "100dp"
+        color:1,0,0,1
