@@ -2,7 +2,7 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty, BooleanProperty
 from kivy.uix.gridlayout import GridLayout
 
-Builder.load_file("widget.kv")
+Builder.load_file("widget_exemples.kv")
 
 
 class WidgetsExemple(GridLayout):

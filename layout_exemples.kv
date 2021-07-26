@@ -1,9 +1,60 @@
-#:import layout layout
+#:import layout_exemples layout_exemples
+
+
+<LayoutExemplesTabs@TabbedPanel>:
+    do_default_tab:False
+    TabbedPanelItem:
+        text: "Widget"
+        MainWidget:
+    TabbedPanelItem:
+        text: "Box"
+        BoxLayoutExemple:
+    TabbedPanelItem:
+        text: "stack"
+        StackLayoutExemple:
+    TabbedPanelItem:
+        text: "scrool"
+        ScrollViewExemple:
+    TabbedPanelItem:
+        text: "grid"
+        GridLayoutExemple:
+    TabbedPanelItem:
+        text: "anchor"
+        AnchorLayoutExemple:
+    TabbedPanelItem:
+        text: "page"
+        PageLayoutExemple:
+
+
 <PageLayoutExemple@PageLayout>:
     MainWidget:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size:self.size
+                pos:self.pos
     BoxLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size:self.size
+                pos:self.pos
     AnchorLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size:self.size
+                pos:self.pos
     GridLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size:self.size
+                pos:self.pos
 
 
 
